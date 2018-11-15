@@ -1,112 +1,85 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SocialIcon } from "react-social-icons";
+//import { SocialIcon } from "react-social-icons";
 import logo from "../Images/logo.png";
 
 /* Add drop down menu when nabar is small */
-
+/* Sort out social media icons */
 const Header = () => {
   return (
-    <nav className="navbar navbar-right navbar-expand-sm navbar-light mb-3 py-0">
-      <div className="container-fluid">
+    <div id="header">
+      <div id="myTopnav" className="container topnav">
         <div>
-          {/*   
-        <ul className="navbar mr-auto">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                <i className="fas fa-home" />
-                <img id="logo" style={logCss} src={logo} alt={logo} />
-              </Link>
-            </li>
-          </ul>
-  */}
-          <ul id="top-links" className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                <i className="fas fa-home" />
-
-                <img id="logo" style={logCss} src={logo} alt={logo} />
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link style={textColor} to="/" className="nav-link">
-                <i className="fas fa-home" />
-                About Me
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link style={textColor} to="/" className="nav-link">
-                <i className="fas fa-home" />
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link style={textColor} to="/" className="nav-link">
-                <i className="fas fa-home" />
-                Contact
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <a
-                href="https://www.linkedin.com/in/victor-bahlangene-9b406ba3/"
-                target="#"
-                className="nav-link"
-              >
-                <SocialIcon
-                  id="icon"
-                  className="nav-item"
-                  url="https://www.linkedin.com/"
-                />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="https://stackoverflow.com/users/9519233/victor-bahlangene"
-                target="#"
-                className="nav-link"
-              >
-                <SocialIcon
-                  id="icon"
-                  className="nav-item"
-                  url="https://stackoverflow.com/jaketrent"
-                />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="https://github.com/victorbahlangene"
-                target="#"
-                className="nav-link"
-              >
-                <SocialIcon
-                  id="icon"
-                  className="nav-item"
-                  url="https://github.com/"
-                />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="https://twitter.com/VBahlangene"
-                target="#"
-                className="nav-link"
-              >
-                <SocialIcon
-                  id="icon"
-                  className="nav-item"
-                  url="https://twitter.com/jaketrent"
-                />
-              </a>
-            </li>
-          </ul>
+          <Link to="/">
+            <img id="logo" src={logo} alt={logo} />
+          </Link>
         </div>
+        <nav>
+          <ul>
+            {/*
+          <li>
+            <Link to="/" className="nav-link">
+              <i className="fas fa-home" />
+
+              <img id="logo" style={logCss} src={logo} alt={logo} />
+            </Link>
+          </li>
+         */}
+            <li>
+              <Link to="/">About Me</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <span id="iconSize">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/victor-bahlangene-9b406ba3/"
+                  target="blank"
+                  className="fa fa-linkedin"
+                >
+                  <i />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://stackoverflow.com/users/9519233/victor-bahlangene"
+                  target="blank"
+                  className="fa fa-stack-overflow"
+                >
+                  <i />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/VBahlangene"
+                  target="blank"
+                  className="fa fa-twitter"
+                >
+                  <i />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/victorbahlangene"
+                  target="blank"
+                  className="fa fa-github"
+                >
+                  <i />
+                </a>
+              </li>
+              <li />
+            </span>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </div>
   );
 };
-
+/*
 const logCss = {
   padding: "0 10px 0 0",
   margin: "0",
@@ -116,5 +89,6 @@ const logCss = {
 const textColor = {
   color: "white"
 };
+*/
 
 export default Header;

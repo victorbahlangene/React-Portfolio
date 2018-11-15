@@ -13,11 +13,11 @@ class Contact extends Component {
 
         <section id="address">
           <div className="container">
-            <h1>Adress: 99258 Lefkoşa,via Mersin 10, TURKEY</h1>
+            <h4>Adress: 99258 Lefkoşa,via Mersin 10, TURKEY</h4>
             <br />
-            <h1>Phone number : +90533 839 4388</h1>
-            <h1>Email : victorbahlangene96@gmail.com</h1>
-            <h1>Skype Username : victor.bahlangene</h1>
+            <h4>Phone number : +90533 839 4388</h4>
+            <h4>Email : victorbahlangene96@gmail.com</h4>
+            <h4>Skype Username : victor.bahlangene</h4>
           </div>
         </section>
       </div>

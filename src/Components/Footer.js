@@ -5,10 +5,8 @@ import React, { Component } from "react";
 class Footer extends Component {
   render() {
     return (
-      <div id="footer" className="container">
-        <p className="container">
-          Victor Bahlangene Web Design, Copyright &copy; 2018
-        </p>
+      <div id="footer">
+        <p>Victor Bahlangene Web Design, Copyright &copy; 2018</p>
       </div>
     );
   }

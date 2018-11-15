@@ -1,23 +1,26 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router /*,Route, Switch*/ } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import "./App.css";
+import NotFound from "./Components/NotFound";
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div style={body} className="container">
+        <div style={body}>
           <Header />
-          {/* <AboutMe /> 
-          <Projects /> 
-          <Contact />*/}
-          <AboutMe />
+          <Switch>
+            <Route exact path="/" component={AboutMe} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/contact" component={Contact} />
+            <Route component={NotFound} />
+          </Switch>
           <Footer />
         </div>
       </Router>

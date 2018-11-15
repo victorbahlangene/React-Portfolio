@@ -7,13 +7,15 @@ class AboutMe extends Component {
   render() {
     return (
       <div>
-        <section id="showcase" className="container">
-          <div className="centered">
-            <h1>
-              <span>Welcome</span>
-              <br />
-              <b>ITS NICE TO MEET YOU</b>
-            </h1>
+        <section>
+          <div id="showcase">
+            <div className="centered">
+              <h1>
+                <span>Welcome</span>
+                <br />
+                <b>ITS NICE TO MEET YOU</b>
+              </h1>
+            </div>
           </div>
         </section>
 
@@ -54,7 +56,7 @@ class AboutMe extends Component {
                 <li>Devolop backend skill,including API development</li>
                 <li>
                   Learn Data filtering by designing and using a twitter bot in
-                  C#
+                  Node.js
                 </li>
               </ul>
             </div>
